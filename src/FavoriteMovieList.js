@@ -5,7 +5,9 @@ class FavoriteMovieList extends Component {
 	render(){
     	return(
           this.props.profiles.map((profile) => 
-			<FavoriteMovie key={profile.id} user={this.props.users[profile.userID]} movie={this.props.movies[profile.favoriteMovieID]}/>
+          	<li>
+				<FavoriteMovie key={profile.id} user={this.props.users[profile.userID]} movie={this.props.movies[profile.favoriteMovieID]}/>
+			</li>
           )
 		);
     }

@@ -106,8 +106,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
-        <h2>Favorite Movies</h2>
-		<FavoriteMovieList users={users} movies={movies} profiles={profiles}/>
+		<h2>Favorite Movies</h2>
+		<ul>
+        	<FavoriteMovieList users={users} movies={movies} profiles={profiles}/>
+		</ul>
       </div>
     );
   }
